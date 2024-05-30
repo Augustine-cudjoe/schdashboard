@@ -1,22 +1,24 @@
 
-import React from 'react'
+import React,{useEffect} from 'react'
 import MenuTop from '../../utils/MenuTop';
 import Wrapper from '../wrapper/Wrapper';
 import "./subject.css"
 function Subject( ) {
-    
+  useEffect(()=>{
+    document.title="subject "
+  })
   return (
     <div   id='subject'>
        <MenuTop/>
    <div className="flex flex-col md:flex-row">
-      <div className='min-h-screen flex-none md:w-1/4'>
+      <div className='md:min-h-screen flex-none md:w-1/4'>
       <Wrapper/>
       </div>
        
-     <div className="h-full w-full md:w-3/4 md:flex-1 md:px-3  md:py-16 md:mt-4">
+     <div className="h-full w-full md:w-3/4 md:flex-1 md:px-3 pt-20  md:py-16 md:mt-4">
          <h1 className='text-4xl text-center text-blue-900 mb-3'> Available Courses </h1>
         <div className="grid  gap-5 md:grid-cols-2 md:mx-5 ">
-          <div className="card border border-green-950  rounded-md ">
+          <div className="card border border-white shadow-lg  rounded-md ">
             <img className='rounded-none w-100 h-100' src='https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg?auto=compress&cs=tinysrgb&w=800'/>
             <div className='ps-3 bg-blue-950 text-white'>
                 <h6 className='font-semibold py-5 md:text-2xl'>Physics</h6>
@@ -28,7 +30,7 @@ function Subject( ) {
             </div>
           </div>
          
-          <div className="card border border-green-950  rounded-md ">
+          <div className="card border border-white shadow-lg  rounded-md ">
             <img className='rounded-none w-100 h-100' src='https://images.pexels.com/photos/3729557/pexels-photo-3729557.jpeg?auto=compress&cs=tinysrgb&w=800'/>
             <div className='ps-3 bg-blue-950 text-white'>
                 <h6 className='font-semibold py-5 md:text-2xl'>  Mathematics</h6>

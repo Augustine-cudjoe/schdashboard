@@ -1,14 +1,16 @@
 
-import React from 'react'
+import React,{useEffect} from 'react'
 import MenuTop from '../../utils/MenuTop';
 import Wrapper from '../wrapper/Wrapper';
 function Accounts( ) {
-    
+  useEffect(()=>{
+    document.title="account "
+  })
   return (
     <div className=''  id='accounts'>
        <MenuTop/>
    <div className="flex flex-col md:flex-row">
-      <div className='min-h-screen flex-none md:w-1/4'>
+      <div className='md:min-h-screen flex-none md:w-1/4'>
       <Wrapper/>
       </div>
        

@@ -1,21 +1,23 @@
 
-import React from 'react'
+import React,{useEffect} from 'react'
 import MenuTop from '../../utils/MenuTop';
 import Wrapper from '../wrapper/Wrapper';
 function Division( ) {
-    
+  useEffect(()=>{
+    document.title="division "
+  })
   return (
     <div className=''  id='division'>
        <MenuTop/>
    <div className="flex flex-col md:flex-row">
-      <div className='min-h-screen flex-none md:w-1/4'>
+      <div className='md:min-h-screen flex-none md:w-1/4'>
       <Wrapper/>
       </div>
        
-     <div className="h-full w-full  md:w-3/4 md:flex-1 md:px-3 py-3  md:py-16 md:mt-4">
+     <div className="h-full w-full  md:w-3/4 md:flex-1 md:px-3 pt-20  md:py-16 md:mt-4">
          <h1 className='text-4xl text-center text-blue-900 mb-3 uppercase'> division </h1>
         <div className="flex md:mx-5 cursor-pointer " id='card-holder'>
-          <div className="card border border-green-950 sm:items-center  rounded-md ">
+          <div className="card border border-white shadow-lg  rounded-md ">
             <img className='w-full h-100  hover:transition-all' src=' https://media.istockphoto.com/id/1351445530/photo/african-student-sitting-in-classroom.jpg?s=612x612&w=0&k=20&c=1ICaZ03iFLzDmxfBkfDkmBGSgj1SDEpsM3eSDgB1KBk='/>
             <div className=' bg-blue-950 w-full text-white'>
               <p className=' p-3 '>

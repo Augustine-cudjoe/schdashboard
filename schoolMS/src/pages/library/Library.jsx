@@ -1,19 +1,21 @@
 
-import React from 'react'
+import React,{useEffect} from 'react'
 import MenuTop from '../../utils/MenuTop';
 import Wrapper from '../wrapper/Wrapper';
 import "./library.css"
 function Library( ) {
-    
+    useEffect(()=>{
+      document.title="library "
+    })
   return (
     <div className=''  id='library'>
        <MenuTop/>
    <div className="flex flex-col md:flex-row">
-      <div className='min-h-screen flex-none md:w-1/4'>
+      <div className='md:min-h-screen flex-none md:w-1/4'>
       <Wrapper/>
       </div>
        
-     <div className="h-full w-full md:w-3/4 md:flex-1 md:px-3  md:py-5  md:mt-4">
+     <div className="h-full w-full md:w-3/4 md:flex-1 md:px-3 pt-20  md:py-5  md:mt-4">
          <h1 className=' text-xl md:text-4xl text-center text-blue-900 uppercase py-3 md:py-0'> OUR LIBRARY </h1>
         <div className=" py-5  mx-5" id='library-content'>
             <h1 className='text-center md:text-start text-2xl md:text-3xl uppercase py-7 text-blue-950  md:capitalize '> Understanding school libraries</h1>

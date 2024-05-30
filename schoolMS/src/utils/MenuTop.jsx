@@ -2,7 +2,7 @@ import React from 'react'
 
 function MenuTop() {
   return (
-    <div className='top-menu' >
+    <div className='top-menu hidden md:block '  >
         <div>
    <h1 className='flex items-center justify-start align-middle bg-blue-950 ps-5 py-3 text-white'> <span>
          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
